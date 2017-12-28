@@ -1,6 +1,6 @@
 {
     "name": "Leanne Bovey Art",
-    "shortname": "Leanne Bovey",
+    "short_name": "Leanne Bovey",
     "start_url": "/home",
     "icons": [
         {
@@ -15,6 +15,6 @@
         }
     ],
     "theme_color": "#74DACF",
-    "background_color": "#FFFFF",
+    "background_color": "#FFFFFF",
     "display": "browser"
 }
