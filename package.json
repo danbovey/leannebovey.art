@@ -1,0 +1,16 @@
+{
+  "name": "leannebovey.art",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Dan Bovey <dan@danbovey.uk>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.22.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-scss": "^1.4.0"
+  }
+}

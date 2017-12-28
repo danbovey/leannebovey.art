@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Cardo:400,700');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Cardo', serif;
+}
+
+@import "container";
+@import "splash";

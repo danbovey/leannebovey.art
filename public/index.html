@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Leanne Bovey</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <main class="splash">
+        <section class="video">
+            <a href="/home">
+                <video autoplay muted loop preload="true" playsinline poster="/assets/img/video-poster.jpg">
+                    <source src="/assets/video/splash.mp4" type="video/mp4" />
+                    <source src="/assets/video/splash.webm" type="video/webm" />
+                </video>
+                <div class="video-content">
+                    <h1>Leanne Bovey</h1>
+                    <span class="enter">enter site &rarr;</span>
+                </div>
+            </a>
+            <button id="btn-play">&#9654;</button>
+        </section>
+    </main>
+    <script>
+        var portrait = false;
+        var video = document.querySelector('video');
+
+        var chooseVideo = function() {
+            if(window.innerHeight > window.innerWidth && !portrait) {
+                portrait = true;
+                video.setAttribute('src', '/assets/video/splash-portrait.mp4');
+            } else if(window.innerWidth > window.innerHeight && portrait) {
+                portrait = false;
+                video.setAttribute('src', '/assets/video/splash.mp4');
+            }
+        };
+        chooseVideo();
+        window.addEventListener('resize', chooseVideo);
+        
+        var playBtn = document.getElementById('btn-play');
+        playBtn.addEventListener('click', function() {
+            video.play();
+            playBtn.style.display = 'none';
+        });
+        window.setTimeout(function() {
+            if(video.currentTime == 0) {
+                playBtn.style.display = 'block';
+            }
+        }, 500);
+    </script>
+</body>
+</html>
