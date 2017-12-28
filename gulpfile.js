@@ -7,17 +7,17 @@ gulp.task('scss', () => {
   return gulp.src('scss/style.scss')
     .pipe(scss())
     .pipe(cssnano())
-    .pipe(gulp.dest('public/css'))
+    .pipe(gulp.dest('docs/css'))
     .pipe(browserSync.stream());
 });
 
 gulp.task('dev', ['scss'], () => {
   browserSync.init({
-    server: './public'
+    server: './docs'
   });
 
   gulp.watch('scss/**/*.scss', ['scss']);
-  gulp.watch('public/*.html').on('change', browserSync.reload);
+  gulp.watch('docs/*.html').on('change', browserSync.reload);
 });
 
 gulp.task('default', ['scss']);
