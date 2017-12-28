@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#74DACF">
     
     <title>Leanne Bovey</title>
 
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -47,7 +49,8 @@
             playBtn.style.display = 'none';
         });
         window.setTimeout(function() {
-            if(video.currentTime == 0) {
+            var ua = navigator.userAgent.toLowerCase();
+            if(video.currentTime == 0 && ua.indexOf("android") > -1) {
                 playBtn.style.display = 'block';
             }
         }, 500);

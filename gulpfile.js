@@ -17,7 +17,7 @@ gulp.task('dev', ['scss'], () => {
   });
 
   gulp.watch('scss/**/*.scss', ['scss']);
-  gulp.watch('docs/*.html').on('change', browserSync.reload);
+  gulp.watch('docs/**/*.html').on('change', browserSync.reload);
 });
 
 gulp.task('default', ['scss']);
