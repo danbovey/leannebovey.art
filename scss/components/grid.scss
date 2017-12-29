@@ -1,0 +1,36 @@
+$padding: 30px;
+
+.grid {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 calc(10vw - #{$padding});
+
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: $padding;
+            cursor: pointer;
+
+            @media(min-width: 540px) {
+                width: 50%;
+            }
+            @media(min-width: 992px) {
+                width: 33.333%;
+            }
+            @media(min-width: 1500px) {
+                width: 25%;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    figcaption {
+        display: none;
+    }
+}

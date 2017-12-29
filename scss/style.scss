@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Cardo:400,700');
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+@import "global";
 
-body {
-    font-family: 'Cardo', serif;
-}
+@import "sections/splash";
+@import "sections/feature";
+@import "sections/artist";
+@import "sections/page-title";
 
-@import "container";
-@import "splash";
+@import "components/container";
+@import "components/button";
+@import "components/grid";
+
 @import "header";
-@import "feature";
-@import "artist";
+@import "vendor/photoswipe";

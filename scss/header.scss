@@ -2,6 +2,10 @@
     padding: 20px 0;
     color: #74DACF;
 
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
     .container {
         display: flex;
         align-items: center;
