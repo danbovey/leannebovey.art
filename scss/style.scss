@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Cardo:400,700');
 
 @import "global";
+@import "header";
+@import "footer";
 
 @import "sections/splash";
 @import "sections/feature";
@@ -11,5 +13,4 @@
 @import "components/button";
 @import "components/grid";
 
-@import "header";
 @import "vendor/photoswipe";
