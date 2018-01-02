@@ -2,6 +2,14 @@
     padding: 20px 0;
     color: #74DACF;
 
+    h1 a {
+        &:hover, &:focus {
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: url(/assets/img/logo.gif);
+        }
+    }
+
     a {
         color: inherit;
         text-decoration: none;
@@ -14,7 +22,12 @@
         margin-left: auto;
 
         a {
-            display: block;
+            display: inline-block;
+            margin-right: 20px;
+
+            &:last-child {
+                margin-right: 0;
+            }
         }
         svg {
             display: block;

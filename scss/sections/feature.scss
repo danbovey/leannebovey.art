@@ -28,6 +28,7 @@
     }
 
     .feature-thumbnail {
+        order: -1;
         width: 100%;
         position: relative;
         
@@ -39,6 +40,7 @@
         }
 
         @media(min-width: 992px) {
+            order: initial;
             width: 45%;
 
             img, video {
@@ -70,11 +72,13 @@
             padding-top: 100px;
         }
     }
-    // .feature-content + .feature-thumbnail {
-    //     margin-right: 50px;
-    // }
 
     .btn {
         margin-top: 30px;
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
