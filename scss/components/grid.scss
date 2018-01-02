@@ -13,7 +13,11 @@ $padding: 30px;
     }
 
     img {
+        display: inline-block;
         width: 100%;
+        min-height: 300px;
+        background: url(/assets/img/photoswipe/preloader.gif) no-repeat;
+        background-position: center;
     }
     figcaption {
         display: none;
