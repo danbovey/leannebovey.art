@@ -1,3 +1,14 @@
+var macy = Macy({
+    container: '.grid .container .macy-container',
+    columns: 1,
+    mobileFirst: true,
+    breakAt: {
+        540: { columns: 2 },
+        992: { columns: 3 },
+        1500: { columns: 4 }
+    }
+});
+
 var initPhotoSwipeFromDOM = function(gallerySelector) {
 
     // parse slide data (url, title, size ...) from DOM elements 
@@ -201,5 +212,5 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
 // execute above function
 window.onload = function() {
-    initPhotoSwipeFromDOM('.grid .container');
+    initPhotoSwipeFromDOM('.grid .container .macy-container');
 };
