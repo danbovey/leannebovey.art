@@ -2,11 +2,15 @@ var macy = Macy({
     container: '.grid .container .macy-container',
     columns: 1,
     mobileFirst: true,
+    waitForImages: true,
     breakAt: {
         540: { columns: 2 },
         992: { columns: 3 },
         1500: { columns: 4 }
     }
+});
+macy.on(macy.constants.EVENT_IMAGE_COMPLETE, function(ctx) {
+    document.querySelector('.grid').classList.remove('loading');
 });
 
 var initPhotoSwipeFromDOM = function(gallerySelector) {
