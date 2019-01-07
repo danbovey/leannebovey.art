@@ -13,19 +13,6 @@
     &.first {
         margin-top: 50px;
     }
-    &.portrait {
-        .feature-thumbnail + .feature-content {
-            padding-left: 0;
-        }
-        
-        @media(min-width: 992px) {
-            .feature-thumbnail {
-                img, video {
-                    left: 33%;
-                }
-            }
-        }
-    }
 
     .feature-thumbnail {
         order: -1;

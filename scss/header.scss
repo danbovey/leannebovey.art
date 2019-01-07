@@ -2,8 +2,10 @@
     padding: 20px 0;
     color: #74DACF;
 
-    h1 a {
-        &:hover, &:focus {
+    h1 {
+        font-size: 3rem;
+
+        a:hover, a:focus {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-image: url(/assets/img/logo.gif);
@@ -19,6 +21,7 @@
         align-items: center;
     }
     .nav {
+        height: 24px;
         margin-left: auto;
 
         a {
